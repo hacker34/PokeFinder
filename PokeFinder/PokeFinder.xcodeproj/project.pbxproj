@@ -14,6 +14,7 @@
 		684A0AA31E6CD5970092C644 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A0A9C1E6CD5970092C644 /* GFGeoHash.m */; };
 		684A0AA41E6CD5970092C644 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A0A9E1E6CD5970092C644 /* GFGeoHashQuery.m */; };
 		684A0AA51E6CD5970092C644 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A0AA01E6CD5970092C644 /* GFQuery.m */; };
+		684A0AAB1E71174E0092C644 /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684A0AAA1E71174E0092C644 /* PokeAnnotation.swift */; };
 		686A48281E6BD71A00889DB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A48271E6BD71A00889DB0 /* AppDelegate.swift */; };
 		686A482A1E6BD71A00889DB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A48291E6BD71A00889DB0 /* ViewController.swift */; };
 		686A482D1E6BD71B00889DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686A482B1E6BD71B00889DB0 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		684A0A9F1E6CD5970092C644 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		684A0AA01E6CD5970092C644 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		684A0AA61E6CD6DA0092C644 /* PokeFinder-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PokeFinder-Bridging-Header.h"; sourceTree = "<group>"; };
+		684A0AAA1E71174E0092C644 /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 		686A48241E6BD71A00889DB0 /* PokeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		686A48271E6BD71A00889DB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		686A48291E6BD71A00889DB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,29 @@
 			path = Implementation;
 			sourceTree = "<group>";
 		};
+		684A0AA71E7116E00092C644 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				686A48291E6BD71A00889DB0 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		684A0AA81E7116E80092C644 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				684A0AAA1E71174E0092C644 /* PokeAnnotation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		684A0AA91E7116F30092C644 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		686A481B1E6BD71A00889DB0 = {
 			isa = PBXGroup;
 			children = (
@@ -131,15 +156,17 @@
 		686A48261E6BD71A00889DB0 /* PokeFinder */ = {
 			isa = PBXGroup;
 			children = (
+				684A0AA81E7116E80092C644 /* Model */,
+				684A0AA91E7116F30092C644 /* View */,
+				684A0AA71E7116E00092C644 /* Controller */,
 				684A0A8F1E6CD5970092C644 /* GeoFire */,
-				684A0A8D1E6CCB950092C644 /* GoogleService-Info.plist */,
 				686A48271E6BD71A00889DB0 /* AppDelegate.swift */,
-				686A48291E6BD71A00889DB0 /* ViewController.swift */,
-				686A482B1E6BD71B00889DB0 /* Main.storyboard */,
+				684A0AA61E6CD6DA0092C644 /* PokeFinder-Bridging-Header.h */,
+				686A48331E6BD71B00889DB0 /* Info.plist */,
+				684A0A8D1E6CCB950092C644 /* GoogleService-Info.plist */,
 				686A482E1E6BD71B00889DB0 /* Assets.xcassets */,
 				686A48301E6BD71B00889DB0 /* LaunchScreen.storyboard */,
-				686A48331E6BD71B00889DB0 /* Info.plist */,
-				684A0AA61E6CD6DA0092C644 /* PokeFinder-Bridging-Header.h */,
+				686A482B1E6BD71B00889DB0 /* Main.storyboard */,
 			);
 			path = PokeFinder;
 			sourceTree = "<group>";
@@ -278,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				684A0AA21E6CD5970092C644 /* GFBase32Utils.m in Sources */,
+				684A0AAB1E71174E0092C644 /* PokeAnnotation.swift in Sources */,
 				686A482A1E6BD71A00889DB0 /* ViewController.swift in Sources */,
 				684A0AA31E6CD5970092C644 /* GFGeoHash.m in Sources */,
 				686A48281E6BD71A00889DB0 /* AppDelegate.swift in Sources */,
